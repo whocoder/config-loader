@@ -31,7 +31,7 @@ stock bool Config_Setup(const char[] name, const char[] file){
 
 stock int Config_LoadInt(const char[] name, int value, const char[] description){
     if(!Config_IsValid()){
-        LogError("[CONFIG LOADER] Improper config loading usage!");
+        LogError("[CONFIG LOADER] No valid config loaded!");
         return 0;
     }
 
@@ -53,7 +53,7 @@ stock int Config_LoadInt(const char[] name, int value, const char[] description)
 
 stock bool Config_LoadBool(const char[] name, bool value, const char[] description){
     if(!Config_IsValid()){
-        LogError("[CONFIG LOADER] Improper config loading usage!");
+        LogError("[CONFIG LOADER] No valid config loaded!");
         return false;
     }
 
@@ -75,7 +75,7 @@ stock bool Config_LoadBool(const char[] name, bool value, const char[] descripti
 
 stock float Config_LoadFloat(const char[] name, float value, const char[] description){
     if(!Config_IsValid()){
-        LogError("[CONFIG LOADER] Improper config loading usage!");
+        LogError("[CONFIG LOADER] No valid config loaded!");
         return 0.0;
     }
 
@@ -97,7 +97,7 @@ stock float Config_LoadFloat(const char[] name, float value, const char[] descri
 
 stock void Config_LoadString(const char[] name, const char[] value, const char[] description, char[] output, int size){
     if(!Config_IsValid()){
-        LogError("[CONFIG LOADER] Improper config loading usage!");
+        LogError("[CONFIG LOADER] No valid config loaded!");
         return;
     }
 
