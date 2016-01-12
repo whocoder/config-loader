@@ -3,28 +3,6 @@
 #endif
 #define _cfloader_included
 
-/*
- *	All credit for this handy config-loading method goes to
- *	Bara, and his efforts in the TTT project. To use, before
- * 	loading set the KeyValues branch name (for example, TTT uses "TTT")
- *	and the config file (build the path first).
- 
- *	Example:
- *		BuildPath(Path_SM, myfile, sizeof(myfile), "configs/rpgsettings.cfg");
- *		Config_Setup("RPG-Settings", myfile);
- *		Config_LoadBool("my_setting", false, "Description: My example setting");
- *
- *
- *	TTT Implementation -
- *		http://git.tf/TTT/Plugin/blob/3d3bd4e549aed1109f51111318436e98c919f23c/addons/sourcemod/scripting/ttt/ttt.sp#L4324
- *		From the highlighted line below
- * 	Bara -
- *		http://git.tf/u/Bara
- *		https://github.com/Bara20
- */
-
-
-
 char __g_sConfigFile[PLATFORM_MAX_PATH];
 char __g_sConfigName[128];
 KeyValues __g_kConfigKV = INVALID_HANDLE;
